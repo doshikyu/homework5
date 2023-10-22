@@ -37,9 +37,65 @@ public class Main {
             System.out.println(year + " год не является високосным.");
         }
 
-       //System.out.println("Задача 4");
+       System.out.println("Задача 4");
+        int deliveryDistance = 95;
+        short deliveryTime = 0;
+        if (deliveryDistance <=20){
+            deliveryTime += 1;
+        }
+        else if (deliveryDistance > 20 && deliveryDistance <=60){
+            deliveryTime += 2;
+        }
+        else if (deliveryDistance > 60 && deliveryDistance <= 100){
+            deliveryTime += 3;
+        }
+        else{
+            System.out.println("Свыше 100 км доставки нет.");
+        }
+        System.out.println("Потребуется дней: " + deliveryTime);
 
-      //System.out.println("Задача 5");
+        System.out.println("Задача 5");
+        short monthNumber = 10;
+        switch (monthNumber){
+            case 12:
+                System.out.println("Декабрь - зимний месяц.");
+                break;
+            case 1:
+                System.out.println("Январь - зимний месяц.");
+                break;
+            case 2:
+                System.out.println("Февраль - зимний месяц.");
+                break;
+            case 3:
+                System.out.println("Март - весенний месяц.");
+                break;
+            case 4:
+                System.out.println("Апрель - весенний месяц.");
+                break;
+            case 5:
+                System.out.println("Май - весенний месяц.");
+                break;
+            case 6:
+                System.out.println("Июнь - летний месяц.");
+                break;
+            case 7:
+                System.out.println("Июль - летний месяц.");
+                break;
+            case 8:
+                System.out.println("Август - летний месяц.");
+                break;
+            case 9:
+                System.out.println("Сентябрь - осенний месяц.");
+                break;
+            case 10:
+                System.out.println("Октябрь - осенний месяц.");
+                break;
+            case 11:
+                System.out.println("Ноябрь - осенний месяц.");
+                break;
+            default:
+                System.out.println("Такого месяца не существует.");
+        }
 
 
     }
